@@ -1,0 +1,12 @@
+* {
+	outline: 1px solid black;
+}
+body {
+	width: 200px;
+}
+img{
+	padding: 5px;
+}
+.ninja_images {
+/*	display: none;*/
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon1</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+        var pokemon = 1; 
+        $(document).ready(function(){
+            for (var i = 1; i < 152; i++){
+                getThemAll();
+                pokemon++;   
+            }
+        })
+        $(".Add_Pokemon").click(function(){
+                getThemAll();
+        }) 
+        function getThemAll(){
+            var pokemonAPI = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+            $('.pokemonGoesHere').append(`<img src="${pokemonAPI}${pokemon}.png"></img>`)
+            };
+    </script>
+
+
+
+</head>
+<body>
+    Assignment: Pokemon
+    <div class="pokemonGoesHere">
+    </div>
+
+</body>
+</html>

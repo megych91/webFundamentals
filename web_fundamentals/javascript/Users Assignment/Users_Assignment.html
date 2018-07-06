@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My first Page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+  $(document).on("click", "#add_user", function(){
+  		var text_value = "<tr> <td>" + $("#test1").val() + "</td>";
+  		text_value = text_value + "<td>" + $("#test2").val() + "</td>"; 
+  		text_value = text_value + "<td>" + $("#test3").val() + "</td>"; 
+  		text_value = text_value + "<td>" + $("#test4").val() + "</td> </tr>";
+  		// console.log(text_value);
+  		$("tr:last").after(text_value);
+  		text_value = "";
+  });
+});
+</script>
+</head>
+<body>
+		<table>
+		<tr>
+		<td>First Name</td>
+		<td>Last Name</td>
+		<td>Email Address</td>
+		<td>Contact No.</td>
+		</tr>
+		</table>
+		<h1>Add User</h1>
+		First Name: <input type="text" value="First Name" id ="test1"><br>
+		Last Name: <input type="text" value="Last Name" id="test2"><br>
+		Email Address: <input type="text" value="Email Address" id="test3"><br>
+		Contact No.: <input type="text" value="Contact No." id="test4"><br>
+		<input type="submit" value="Add User" id="add_user">
+
+</body>
+</html>

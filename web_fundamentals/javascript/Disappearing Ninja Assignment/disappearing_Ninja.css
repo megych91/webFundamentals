@@ -1,0 +1,21 @@
+*{
+	/*outline: 1px solid pink;*/
+}
+body {
+	background-color: white;
+	width: 700px;
+}
+.wrapper {
+	background-color: pink;
+}
+img{
+	width: 150px;
+	height: 150px;
+	display: inline-flex;
+	margin: 5px;
+	border: 2px solid black;
+}
+header{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-weight: bold;

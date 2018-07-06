@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My jQuery Basic Assignment</title>
+    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.button2').click(function() {
+		        $('#initiallyHiddenBlock').show();
+		    });
+    		$('.button1').click(function(){
+    			$('.text1').css('color', 'red');
+    		});
+    		$("#button2").click(function(){
+			   	$(".hide").show();
+			});
+			$('.button2').click(function(){
+				$('img').toggle();
+			});
+    		$(".button3").click(function(){
+    			$(".blah").append("Some prepended text.");
+    		});
+		})
+    </script>
+    <link rel="stylesheet" href="jQuery_Basic_Assignment.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row1">
+			<div class="button1"><button type="button">AddClass</button></div>
+			<div class="text1"><h1>AddClass</h1>
+			<p>Click the button to add 'red' to this paragraph</p></div>
+		</div>
+		<div class="row2">
+			<div class="button2"><button type="button">Slidetoggle</button></div>
+			<div class="text2"><h1>Slidetoggle</h1>
+			<p>Click the button to slidetoggle a hidden image</p></div>
+		</div>
+		<div class="row3">
+			<div class="button3"><button type="button">Append</button></div>
+			<div class="text3"><h1>Append</h1>
+			<p class="blah">Click the button to append a new </p></div>
+		</div>
+			<img src="https://vignette.wikia.nocookie.net/epic-rap-battles-of-cartoons/images/1/10/Hello-kitty.png/revision/latest?cb=20170807065310" alt="hello kitty">
+	</div>	
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+	outline: 1px solid black;
+}
+body{
+	background-color: pink;
+}
+.wrapper{
+	width: 980px;
+	height: 980px;
+}
+.form{
+	display: inline-flex;
+	background-color: black;
+}
+.contacts{
+	display: inline-flex;
+}
+input{
+	display: inline-block;
+	float: right;
+}
