@@ -1,0 +1,21 @@
+*{
+/*	outline: 1px solid black;*/
+}
+.wrapper {
+	background-color: white;
+}
+.yellow_box {
+	background-color: yellow;
+}
+.desktop {
+	background-color: gray;
+	width: 1024px;
+}
+.tablet{
+	background-color: gray;
+	width: 700px;
+}
+.phone{
+	background-color: gray;
+	width: 400px;
+}

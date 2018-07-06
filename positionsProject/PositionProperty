@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="PositionProperty.css">
+	<title>PositionProperty</title>
+</head>
+<body>
+<div id="container">
+  <div id="box-1">
+  </div>
+  <div id="box-2">
+  </div>
+  <div id="box-3copy">
+  </div>
+</div>
+</body>
+</html>>
